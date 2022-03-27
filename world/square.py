@@ -21,7 +21,7 @@ class Square:
         if type(self._type) != Square_Type:
             print(1 + "2")
 
-    def draw(player, r, angle, fake_screen):
+    def draw(self, player, r, angle, fake_screen):
         print('x')
 
         # Obtain angle from d - 45 to position cat

@@ -1,9 +1,7 @@
 from pygame.locals import *
-from run import player, squares
+# from run import player, squares
 from world.square import *
 
-
-# from player import Player
 
 def screen_init(width, heigth):
     pygame.init()
@@ -13,12 +11,12 @@ def screen_init(width, heigth):
     return screen, fake_screen
 
 
-def display(screen, fake_screen):
+def display(screen, fake_screen, test_funk, squares, player):
     fake_screen.fill('black')
     _screen = screen
 
     print('a')
-    test_all(squares, player)
+    test_funk(squares, player)
 
     # image = pygame.image.load("/Users/victor/PycharmProjects/gameNewHouse/textures/test.jpg")  # self._type.image)
     # fake_screen.blit(image, (0, 0))
