@@ -26,7 +26,6 @@ class Player:
 
             else:
                 angle = math.degrees(math.atan(math.sqrt((pos.x - self.pos.x) ** 2) / math.sqrt((pos.y - self.pos.y) ** 2))) + add_on
-                print(angle)
                 if self.direction - 45 <= angle <= self.direction + 45:
                     square.draw(self, 16, angle, self.fake_screen)
 

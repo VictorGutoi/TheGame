@@ -22,15 +22,13 @@ class Square:
             print(1 + "2")
 
     def draw(self, player, r, angle, fake_screen):
-        print('x')
-
         # Obtain angle from d - 45 to position cat
         _angle = angle + 45 - player.direction
 
         part_of_segment = 90 / _angle
 
         image = pygame.image.load("/Users/victor/PycharmProjects/gameNewHouse/textures/test.jpg")  # self._type.image)
-        fake_screen.blit(image, (0, 0))
+        fake_screen.blit(image, (self.pos.x, self.pos.y))
 
 
 test1 = Square_Type("/Users/victor/PycharmProjects/gameNewHouse/textures/test.jpg", "test_1")
