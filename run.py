@@ -3,8 +3,6 @@ from player import Player
 from world.square import *
 from data_types import *
 
-width, height = 1440, 875
-
 screen, fake_screen = screen_init(width, height)
 
 player = Player(fake_screen)

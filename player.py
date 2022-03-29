@@ -22,12 +22,12 @@ class Player:
                     angle = 90 + add_on
 
                 if self.direction - 45 <= angle <= self.direction + 45:
-                    square.draw(self, 16, angle, self.fake_screen)
+                    square.draw(self, 16, angle, pitagora(pos.x - self.pos.x, pos.y - self.pos.y), self.fake_screen)
 
             else:
                 angle = math.degrees(math.atan(math.sqrt((pos.x - self.pos.x) ** 2) / math.sqrt((pos.y - self.pos.y) ** 2))) + add_on
                 if self.direction - 45 <= angle <= self.direction + 45:
-                    square.draw(self, 16, angle, self.fake_screen)
+                    square.draw(self, 16, angle, pitagora(pos.x - self.pos.x, pos.y - self.pos.y), self.fake_screen)
 
     # def look_around(self, screen_width):
     #     x, y = pygame.mouse.get_pos()

@@ -1,5 +1,7 @@
 import math
 
+width, height = 1440, 875
+
 
 class Pos:
     def __init__(self, x_y):
