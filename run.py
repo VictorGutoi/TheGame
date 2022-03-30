@@ -15,6 +15,7 @@ running = True
 pygame.mouse.set_pos(0, 0)
 
 while running:
-    #    player.look_around(200, screen)
+    player.look_around()
+    player.correct_direction()
 
     running = display(screen, fake_screen, test_all, squares, player)
